@@ -4,7 +4,7 @@ email:       rafal [at] paliwoda.eu
 author:      Rafał Paliwoda
 description: ""
 baseurl:     ""
-url:         ""
+url:         "http://paliwodar.github.io"
 date_format: "%b %-d, %Y"
 
 # Google services
