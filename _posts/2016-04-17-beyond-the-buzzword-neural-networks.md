@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Beyond the Buzzword&#58; Neural Networks
-date:       2016-03-01
+date:       2016-04-17
 summary:    So, What are Neural Networks?
 categories: neural-networks machine-learning coursera programming
 ---
