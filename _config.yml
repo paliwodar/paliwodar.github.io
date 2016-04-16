@@ -1,6 +1,6 @@
 # Site settings
-title:       Programming pearls
-email:       ""
+title:       No man writes the same code twice
+email:       "rafal@paliwoda.eu"
 author:      Rafał Paliwoda
 description: ""
 baseurl:     ""
@@ -22,7 +22,7 @@ show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    false
 ajaxify_contact_form: false
-enable_mathjax: false
+enable_mathjax: true
 extended_fonts: false
 
 # Disqus post comments
