@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Beyond the Buzzword&#58; Neural Networks
-date:       2016-05-01
+date:       2016-03-01
 summary:    So, What are Neural Networks?
 categories: neural-networks machine-learning coursera programming
 ---
@@ -30,7 +30,7 @@ So they built a remarkable Go engine. And using not just one, but two[^two_netwo
 
 So neural networks idea is nature-inspired. This seems to be very common approach for dealing with very complex problems in computer science.
 Everybody must have heard about genetic algorithms or any colony optimization for instance. 
-In that case, as the name suggests the model tries to mimic the brain neurons behaviour. 
+In our case, as the name suggests the model tries to mimic the brain neurons behaviour. 
 But for me, the brain stuff could be easily only an interpretation of NN model. 
 It's because it looks like a smooth extension of logistic regression. I know this can sound a bit vague. Let's delve into details.
 
@@ -172,7 +172,7 @@ Ok, we've just gone through pretty basic stuff. It was necessary however to illu
 Now we're gonna take a look at a canonical example of a function that cannot be solved with the simplest linear decision boundary. 
 It is easy to observe that while looking at the chart:
 
-TODO
+![Xor_chart_empty](http://localhost:4000/images/xor_chart_empty.svg){: .center-image .scaled-down-50-image}
 
 #### Polynomial regression
 
@@ -180,9 +180,9 @@ There are no line that could separate the data correctly. What can we do then in
 We could of course introduce more features using a polynomial regression. 
 
 The example equation of a non-linear boundary can be for instance:
- $$ 5xy + 2x + 2y - 1 > 0 $$ --- presented on the chart below:
+ $$ 2x + 2y - 5xy - 1 > 0 $$ --- presented on the chart below:
 
-TODO
+![Xor_chart](http://localhost:4000/images/xor_chart.svg){: .center-image .scaled-down-50-image}
 
 #### Putting things together
 
@@ -201,7 +201,7 @@ We should aim obtaining something like this:
 ![Xor gates](http://localhost:4000/images/gates.svg){: .center-image .scaled-down-40-image}
 
 That's just a schema that uses logical gates. Let's then try to convert it to perceptrons language.
-Please note that \\(\Theta_{\text{NAND}} = -\Theta_{\text{AND}}\\). 
+It seems that the last required thing is to note that \\(\Theta_{\text{NAND}} = -\Theta_{\text{AND}}\\). 
 
 We have then all the pieces we need to build... a Neural Network!
 
@@ -217,9 +217,9 @@ that has been discovered by the network itself!
 So it really behaves like a human neural system. We could perceive the input parameters
 as readings from our body sensors, like fingertips or taste receptors.
 It is then processed by the net of neurons that is being tweaked as different impulses are received.
-which also happens to an artificial network during the learning process.
+Which also happens to an artificial network during the learning process.
 
-We won't go into the details here. Hope that is easy now continue with some other sources 
+We won't go into the further details here. Hope that is easy now to continue with some other sources 
 once we understand the basics. Let's take a look however at the representation of such a network.
 It turns out it is natural to represent \\(\Theta\\) as an array of matrices -- each corresponding to
 different layer of the network. In the network above it would be:
@@ -253,8 +253,8 @@ It is necessary to mention that using a neural network that is already trained i
 Since we have the values on the edges it is enough to perform a so called forward propagation.
 The non-trivial thing however is the process of obtaining proper values.
 There is some more or less advanced calculus required to fully understand this stuff
-and bacause of that nobody can say it is a ridiculously easy topic.
-Describing it here goes (un)fortunately beyond the scope of the article and lies on the far side of author's math competences.
+and because of that nobody can say it is a ridiculously easy topic.
+Describing it goes (un)fortunately beyond the scope of the article and lies on the far side of author's math competences.
 
 Thank you for your attention. Hope you enjoyed the reading!
 

@@ -1,0 +1,56 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{tkz-graph}
+\GraphInit[vstyle = Classic]
+\tikzset{
+  LabelStyle/.style = { rectangle, rounded corners, 
+                        fill = white!50,
+                        text = black, font = \small\bfseries },
+  VertexStyle/.append style = { fill=white,thick, minimum size=25pt, font = \Large\bfseries, thick},
+  EdgeStyle/.append style = {-> , font=\bfseries} }
+\thispagestyle{empty}
+\begin{document}
+\begin{tikzpicture}
+  \SetGraphUnit{45pt}
+  \node[VertexStyle](B2) at (0,1.5) {$+1$};
+  \node[VertexStyle](B1) at (-3,1.5){$+1$};
+  \node[VertexStyle](X1) at (-3,0){$x_1$};
+  \node[VertexStyle](X2) at (-3,-1.5){$x_2$};
+  \node[draw=none, thick, font=\Large\bfseries](END) at (5.5,0){$h_\Theta(x)$};
+
+\tikzset{ VertexStyle/.append style = { fill = purple }}
+  \node[VertexStyle](NAND) at (0,0) {$\uparrow$};
+\tikzset{ VertexStyle/.append style = { fill = olive }}
+  \node[VertexStyle](OR) at (0,-1.5) {$\lor$}; 
+\tikzset{ VertexStyle/.append style = { fill = teal }}
+  \node[VertexStyle](AND2) at (3,0){$\land$};
+
+  \Edge[](AND2)(END)
+
+\tikzset{EdgeStyle/.append style = {teal},
+	LabelStyle/.append style = {text= teal}}
+  \Edge[label=-30](B2)(AND2)
+  \Edge[label=20](NAND)(AND2)
+  \Edge[label=20](OR)(AND2)
+
+\tikzset{EdgeStyle/.append style = {purple},
+	LabelStyle/.append style = {text = purple}}
+  \Edge[label=30 ](B1)(NAND)
+\tikzset{EdgeStyle/.append style = {purple},
+	LabelStyle/.append style = {text = purple,left,xshift=-6pt}}
+  \Edge[label=-20](X1)(NAND)
+\tikzset{EdgeStyle/.append style = {purple},
+	LabelStyle/.append style = {text = purple,left,yshift=-6pt}}
+  \Edge[label=-20](X2)(NAND)
+
+\tikzset{EdgeStyle/.append style = {olive},
+	LabelStyle/.append style = {text = olive, right,xshift=-5pt,yshift=6pt}}
+  \Edge[label=20](X2)(OR)
+\tikzset{EdgeStyle/.append style = {olive},
+	LabelStyle/.append style = {text = olive,yshift=-7pt,xshift=15pt}}
+  \Edge[label=20](X1)(OR)
+\tikzset{EdgeStyle/.append style = {olive},
+	LabelStyle/.append style = {text = olive,yshift=24pt,xshift=-34}}
+  \Edge[label=-10](B1)(OR)
+
+\end{tikzpicture}
+\end{document}
