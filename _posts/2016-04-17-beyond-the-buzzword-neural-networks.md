@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Beyond the Buzzword&#58; Neural Networks
-date:       2016-04-17
+date:       2016-04-16
 summary:    So, What are Neural Networks?
 categories: neural-networks machine-learning coursera programming
 ---
@@ -180,13 +180,13 @@ There are no line that could separate the data correctly. What can we do then in
 We could of course introduce more features using a polynomial regression. 
 
 The example equation of a non-linear boundary can be for instance:
- $$ 2x + 2y - 5xy - 1 > 0 $$ --- presented on the chart below:
+ $$ 2x_1 + 2x_2 - 5x_1x_2 - 1 > 0 $$ --- presented on the chart below:
 
 ![Xor_chart](http://localhost:4000/images/xor_chart.svg){: .center-image .scaled-down-50-image}
 
 #### Putting things together
 
-We can try however to figure out some alternative way of solving the XOR problem. It is required however to take a closer look at the definition
+We can try however to figure out some alternative way of solving the XOR problem. It is required to take a closer look at the definition
 of this boolean operation. And it looks as follows:
 
 $$ 
