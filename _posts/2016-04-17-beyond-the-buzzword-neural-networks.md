@@ -68,7 +68,7 @@ Fortunately we can skip the details. The basic idea is to minimize the error bet
 After obtaining \\(\\Theta\\) we get a hyperplane[^hyperplane] equation which gives us the estimation we are looking for. 
 Here you can see a line that predicts a house price basing on its area:
 
-![Linear regression](http://localhost:4000/images/linear_regression.svg){: .center-image .scaled-down-70-image}
+![Linear regression](/images/linear_regression.svg){: .center-image .scaled-down-70-image}
 
 So basically, what we've just more or less accurately described above is called a linear regression.
 
@@ -86,7 +86,7 @@ $$ g(t) = \frac{1}{1 + e^{-t}}  $$
 
 That looks like this:
 
-![Logistic curve](http://localhost:4000/images/logistic-curve.svg){: .center-image .scaled-down-50-image}
+![Logistic curve](/images/logistic-curve.svg){: .center-image .scaled-down-50-image}
 
 It's easy to see that its result is close to one and zero for high and low input values correspondingly.
 
@@ -118,7 +118,7 @@ $$\Theta_0 + \Theta_1 < 0 \quad \Theta_0 > 0$$
 It's very easy to find proper \\(\\Theta\\) values now. It can be for instance: \\(\Theta = [10, -20]\\).
 We could visualize the above with the following graph:
 
-![Negation perceptron](http://localhost:4000/images/negation.svg){: .center-image .scaled-down-45-image}
+![Negation perceptron](/images/negation.svg){: .center-image .scaled-down-45-image}
 
 #### AND 
 
@@ -143,13 +143,13 @@ The example solution here can be: \\(\Theta = [-30, 20, 20]\\). We can see that 
 
 The graph that expresses that:
 
-![And perceptron](http://localhost:4000/images/and.svg){: .center-image .scaled-down-45-image}
+![And perceptron](/images/and.svg){: .center-image .scaled-down-45-image}
 
 #### OR
 
 We can skip the details here. Let's draw however a visualisation for logical alternative:
 
-![Or perceptron](http://localhost:4000/images/or.svg){: .center-image .scaled-down-45-image}
+![Or perceptron](/images/or.svg){: .center-image .scaled-down-45-image}
 
 ## A bit more demanding function: XOR
 
@@ -172,7 +172,7 @@ Ok, we've just gone through pretty basic stuff. It was necessary however to illu
 Now we're gonna take a look at a canonical example of a function that cannot be solved with the simplest linear decision boundary. 
 It is easy to observe that while looking at the chart:
 
-![Xor_chart_empty](http://localhost:4000/images/xor_chart_empty.svg){: .center-image .scaled-down-50-image}
+![Xor_chart_empty](/images/xor_chart_empty.svg){: .center-image .scaled-down-50-image}
 
 #### Polynomial regression
 
@@ -182,7 +182,7 @@ We could of course introduce more features using a polynomial regression.
 The example equation of a non-linear boundary can be for instance:
  $$ 2x_1 + 2x_2 - 5x_1x_2 - 1 > 0 $$ --- presented on the chart below:
 
-![Xor_chart](http://localhost:4000/images/xor_chart.svg){: .center-image .scaled-down-50-image}
+![Xor_chart](/images/xor_chart.svg){: .center-image .scaled-down-50-image}
 
 #### Putting things together
 
@@ -198,14 +198,14 @@ x_1 \oplus x_2 &\equiv \neg (x_1 \land x_2) \land (x_1 \lor x_2)   %\\
 Let's try now combine what we already have in order to express the behaviour of XOR.
 We should aim obtaining something like this:
 
-![Xor gates](http://localhost:4000/images/gates.svg){: .center-image .scaled-down-40-image}
+![Xor gates](/images/gates.svg){: .center-image .scaled-down-40-image}
 
 That's just a schema that uses logical gates. Let's then try to convert it to perceptrons language.
 It seems that the last required thing is to note that \\(\Theta_{\text{NAND}} = -\Theta_{\text{AND}}\\). 
 
 We have then all the pieces we need to build... a Neural Network!
 
-![Xor](http://localhost:4000/images/xor.svg){: .center-image .scaled-down-70-image}
+![Xor](/images/xor.svg){: .center-image .scaled-down-70-image}
 
 ## Representation
 
