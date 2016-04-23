@@ -29,7 +29,7 @@ So they built a remarkable Go engine. And using not just one, but two[^two_netwo
 ## Genesis
 
 So neural networks idea is nature-inspired. This seems to be very common approach for dealing with very complex problems in computer science.
-Everybody must have heard about genetic algorithms or any colony optimization for instance. 
+Everybody must have heard about genetic algorithms or ant colony optimization for instance. 
 In our case, as the name suggests the model tries to mimic the brain neurons behaviour. 
 But for me, the brain stuff could be easily only an interpretation of NN model. 
 It's because it looks like a smooth extension of logistic regression. I know this can sound a bit vague. Let's delve into details.
