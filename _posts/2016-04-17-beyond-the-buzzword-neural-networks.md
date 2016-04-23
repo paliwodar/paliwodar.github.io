@@ -169,7 +169,7 @@ $$ \begin{array}{|c|c|c|}
 
 Ok, we've just gone through pretty basic stuff. It was necessary however to illustrate the big picture.
 
-Now we're gonna take a look at a canonical example of a function that cannot be solved with the simplest linear decision boundary. 
+In addition to what has been said XOR is a canonical example of a function that cannot be solved with the simplest linear decision boundary. 
 It is easy to observe that while looking at the chart:
 
 ![Xor_chart_empty](/images/xor_chart_empty.svg){: .center-image .scaled-down-50-image}
